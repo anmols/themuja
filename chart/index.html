@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Financial | Chart.js</title>
+		<script src="js/luxon.js"></script>
+		<script src="js/chart.js"></script>
+		<script src="js/chart_luxon.js"></script>
+		<script src="js/chartjs-chart-financial.js" type="text/javascript"></script>
+                <script type="text/javascript" src="js/socket.io.js"></script> 
+                <script type="text/javascript"  src="js/jquery.js"></script>
+                <script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		
+		<div style="width:1000px">
+			<canvas id="chart"></canvas>
+		</div>
+		<div>
+                    <select onchange="update()" id="offerId">
+				<option selected value="2">USD/JPY</option>
+				<option value="3">GBP/USD</option>
+				<option value="6">USD/CAD</option>
+				<option value="7">NZD/USD</option>
+				<option value="9">EUR/GBP</option>
+				<option value="10">EUR/JPY</option>
+				<option value="11">GBP/JPY</option>
+				<option value="28">AUD/NZD</option>
+				<option value="1058">USDOLLAR</option>
+				<option value="4001">XAU/USD</option>
+				<option value="8001">BTC/USD</option>
+				<option value="2001">USOil</option>
+				<option value="2003">SOYF</option>
+				<option value="1013">US30</option>
+				<option value="1010">SPX500</option>
+				<option value="1007">JPN225</option>
+				<option value="1004">GER30</option>
+			</select>
+                    <div style="display: inline">
+                        <input onchange="update()" checked=""  type="radio" id="1min" name="interval" value="m1">
+                        <label for="1min">1min</label>
+                        <input onchange="update()" type="radio" id="30min" name="interval" value="m30">
+                        <label for="30min">30min</label>
+                        <input onchange="update()" type="radio" id="1hr" name="interval" value="h1">
+                        <label for="1hr">1hr</label>
+                        <input onchange="update()" type="radio" id="1day" name="interval" value="d1">
+                        <label for="1day">1day</label>
+                    </div>
+			
+		</div>
+		
+	</body>
+</html>
