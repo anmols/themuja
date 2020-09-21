@@ -1,18 +1,23 @@
  var socket = null;
 var socketConnected = false;
-var token = 'a0c448045fd798a838fd94f6bff0b7b9f67e6cdf';
-openSocket(token);
+
+  var token = 'a0c448045fd798a838fd94f6bff0b7b9f67e6cdf';
 var socketId = '';
 
 
 var barCount = 60;
 var initialDateStr = '17 Sep 2020 00:00 Z';
 
-var ctx = document.getElementById('chart').getContext('2d');
-ctx.canvas.width = 1000;
-ctx.canvas.height = 250;
-var chart;
 
+var chart;
+var ctx;
+
+function update() {
+
+        var offerId = $('#offerId').val();
+        var interval = $('input[name="interval"]:checked').val();
+        callapi(offerId,interval);
+}
 
 function openSocket(token)
 {  
@@ -89,10 +94,12 @@ function callapi(offerId,interval)//socketId,token,apiMethod
                     });
 }
 
-var update = function() {
 
-        var offerId = $('#offerId').val();
-        var interval = $('input[name="interval"]:checked').val();
-        callapi(offerId,interval);
-};
-
+$( document ).ready(function() {
+  
+  openSocket(token);
+  ctx = document.getElementById('chart').getContext('2d');
+ctx.canvas.width = 1000;
+ctx.canvas.height = 250;
+  
+});
