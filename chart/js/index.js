@@ -1,16 +1,23 @@
- var socket = null;
+var socket = null;
 var socketConnected = false;
 
-  var token = 'a0c448045fd798a838fd94f6bff0b7b9f67e6cdf';
+  //var token = 'a0c448045fd798a838fd94f6bff0b7b9f67e6cdf';
+var token = '194ea7b307339c15e64fdaddee023c60fdee2c57';
+var apiUrl = 'https://api.fxcm.com/';
 var socketId = '';
 
 
 var barCount = 60;
-var initialDateStr = '17 Sep 2020 00:00 Z';
 
 
 var chart;
 var ctx;
+
+var myVar = setInterval(update, 4000);
+
+function stopColor() {
+  clearInterval(myVar);
+}
 
 function update() {
 
@@ -25,7 +32,7 @@ function openSocket(token)
     if(!socket)
     {   
         console.log('start connect');
-        socket = io('https://api-demo.fxcm.com/', {
+        socket = io(apiUrl, {
         query: 'access_token=' + token
         });
         socket.on('connect', function () {
@@ -48,7 +55,7 @@ function callapi(offerId,interval)//socketId,token,apiMethod
 {  
     console.log("socketId:"+socketId+",token:"+token);
     $.ajax({
-            url: 'https://api-demo.fxcm.com/candles/'+offerId+'/'+interval,
+            url: apiUrl+'candles/'+offerId+'/'+interval,
             type: 'GET',
             beforeSend: function (xhr) {
                 xhr.setRequestHeader('Authorization', 'Bearer '+socketId + token);
@@ -95,11 +102,11 @@ function callapi(offerId,interval)//socketId,token,apiMethod
 }
 
 
-$( document ).ready(function() {
-  
-  openSocket(token);
-  ctx = document.getElementById('chart').getContext('2d');
-ctx.canvas.width = 1000;
-ctx.canvas.height = 250;
-  
+$(document).ready(function () {
+
+    openSocket(token);
+    ctx = document.getElementById('chart').getContext('2d');
+    ctx.canvas.width = 1000;
+    ctx.canvas.height = 250;
+
 });
