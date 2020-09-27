@@ -1,7 +1,3 @@
-<?php
-define('BASE_URL', 'http://localhost/html/themuja');
-define('HOME_URL', BASE_URL.'/home.php')
-?>
 <!--side bar css-->
 <link rel="stylesheet" href="<?php echo BASE_URL ?>/sidebar/css/normalize.min.css">
 <link rel="stylesheet" href="<?php echo BASE_URL ?>/sidebar/css/defaults.min.css">
@@ -24,14 +20,21 @@ define('HOME_URL', BASE_URL.'/home.php')
     <ul>
         <li class="nav-submenu"><a href="#">Customer Management</a>
             <ul>
-                <li><a href="#">Individual Customer</a></li>
-                <li><a href="#">Commercial Customer</a></li>
+                <li><a href="<?php echo HOME_URL ?>?page=register">Individual Customer</a></li>
+                <li><a href="<?php echo HOME_URL ?>?page=register-comm">Commercial Customer</a></li>
                 <li><a href="<?php echo HOME_URL ?>?page=customer_search">Customer Search</a></li>
+            </ul>
+        </li>
+        <li class="nav-submenu"><a href="#">Handle Customer Withdrawal</a>
+            <ul>
+                <li><a href="#">Search withdraw</a></li>
+                <li ><a href="<?php echo HOME_URL ?>?page=customer_withdraw">withdraw</a>
             </ul>
         </li>
         <li class="nav-submenu"><a href="#">Handle Customer Deposit</a>
             <ul>
                 <li><a href="#">Search Deposit</a></li>
+                <li ><a href="<?php echo HOME_URL ?>?page=customer_deposit">deposit</a>
                 <li><a href="#">NON-RMB Deposit Clear</a></li>
                 <li><a href="#">RMB Deposit Clear</a></li>
             </ul>

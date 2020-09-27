@@ -26,7 +26,7 @@
             <tr>
                 <td>Tiger </td>
                 <td>Nixon</td>
-                <td><a href="customer_dashboard.html">FX123</a></td>
+                <td><a href="<?php echo HOME_URL ?>?page=customer_profile">FX123</a></td>
                 <td>61</td>
                 <td>123456</td>
                 <td>abc@forex.com</td>
