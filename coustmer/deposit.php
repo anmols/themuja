@@ -1,35 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title></title>
-
-        <meta name="description" content="Source code generated using layoutit.com">
-        <meta name="author" content="LayoutIt!">
-
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-
-    </head>
-    <body>
-
-        <div class="container-fluid">
+  <?php
+include "header.php";
+?><div class="container-fluid">
             <form>
-                <div class="row" style="background-color: #e6e1dc">
+                
+                <div class="row"  style="margin:10px;" >
                     <div class="col-md-2"></div>
-                    <div class="col-md-7">
-                        <br>
-                        <br><h3>Customer Deposit</h3><br>
-                    </div>
-                    <div class="col-md-1"><br><br>
-                          <a class="btn btn-success" href="customer_dashboard.html">Deposit</a>
+                    <div class="col-md-10">
+                        <h2>Coustmer Deposit</h2> 
                     </div>
                 </div>
-                <br> <br>
-
+                
                 <div class="row form-group">
                     <div class="col-md-2"></div>
                     <div class="col-md-3">
@@ -136,9 +116,5 @@
                 </div>
             </form>
         </div>
-
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
-</html>
+            <?php
+include "footer.php";

@@ -1,98 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title></title>
-        <meta name="description" content="Source code generated using layoutit.com">
-        <meta name="author" content="LayoutIt!">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
-        <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-        
-    </head>
-    <body>
-        <!--menu -->
-        <style>
-            body {
-                font-family: "Lato", sans-serif;
-            }
-
-            .sidenav {
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                left: 0;
-                background-color: #ccc;
-                overflow-x: hidden;
-                transition: 0.5s;
-                padding-top: 60px;
-            }
-
-            .sidenav a {
-                padding: 8px 8px 8px 32px;
-                text-decoration: none;
-                font-size: 25px;
-                color: #0e0e0e;
-                display: block;
-                transition: 0.3s;
-            }
-
-            .sidenav a:hover {
-                color: #f1f1f1;
-            }
-
-            .sidenav .closebtn {
-                position: absolute;
-                top: 0;
-                right: 25px;
-                font-size: 36px;
-                margin-left: 50px;
-            }
-
-            @media screen and (max-height: 450px) {
-                .sidenav {padding-top: 15px;}
-                .sidenav a {font-size: 18px;}
-            }
-        </style>
-        <script>
-        function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-        </script>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="form-group">
-                <br>
-            </div>
-            <div class="form-group">
-                <a  class="form-control btn-info  btn" href="register.html">Individual Register</a>
-            </div>
-            <div class="form-group">
-                <a  class="form-control btn-info  btn" href="registerComm.html">Commercial Register</a>
-            </div>
-        </div>
-      <!--menu -->
-        <div class="container my-4">
-
-
-            <hr>
-
-            <p class="font-weight-bold">Basic example</p>
-
-            <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
+     <div class="row" style="background-color: #e6e1dc">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-7">
+                        <h3> Coustmer List</h3><br>
+                    </div>
+                 
+                </div>
+   <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
                 <thead>
                     <tr>
                         <th class="th-sm">First Name
@@ -113,7 +26,7 @@
                     <tr>
                         <td>Tiger </td>
                         <td>Nixon</td>
-                        <td><a href="customer_dashboard.html">FX123</a></td>
+                        <td><a href="coustmer/">FX123</a></td>
                         <td>61</td>
                         <td>123456</td>
                         <td>abc@forex.com</td>
@@ -235,28 +148,3 @@
                     </tr>
                 </tbody>
             </table>
-
-
-
-
-
-        </div>
-
-
-
-        <script>
-            $(document).ready(function () {
-                $('#dtBasicExample').DataTable();
-                $('.dataTables_length').addClass('bs-select');
-            });
-
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-        </script>
-    </body>
-</html>
