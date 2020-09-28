@@ -1,4 +1,3 @@
-<?php include_once BASE_PATH.'/customer/lightProfile.php';?>
 <form>
      <div class="row"  style="margin:10px;" >
             <div class="col-md-2"></div>

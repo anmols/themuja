@@ -1,4 +1,3 @@
-<?php include_once BASE_PATH.'/customer/lightProfile.php';?>
 <div class="container-fluid">
             <form>
                 

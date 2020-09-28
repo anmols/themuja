@@ -1,4 +1,4 @@
-<?php include_once './config.php';?>
+<?php include_once '../config.php';?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,13 +16,13 @@
     </head>
     <body>
        <?php include_once 'header.php';?>
-        <div style="padding: 10px;">
+        <div style="padding-top: 67px;">            
             <?php
             if (!empty($_REQUEST['page']))
             {
                 try
                 {
-                    $page= BASE_PATH.'/'. str_replace('_', '/', $_REQUEST['page']).'.php';
+                    $page= BASE_PATH.'/customer/'. str_replace('_', '/', $_REQUEST['page']).'.php';
                    // echo $page;die;
                     
                     include_once $page;
