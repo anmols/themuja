@@ -60,6 +60,7 @@
                 <li><a href="#">Search Payment</a></li>
                 <li><a href="#">Arrange Payment</a></li>
                 <li><a href="#">Process NON-RMB Payment</a></li>
+                <li><a href="<?php echo CUSTOMER_URL ?>?page=transaction">Transaction</a></li>
             </ul>
         </li>
         <li class="nav-submenu"><a href="#">Customer History</a>
