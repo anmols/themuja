@@ -102,6 +102,58 @@
         });
     }
 
+    // Hero Slideshow
+    var slides = document.querySelectorAll('.mst-slide');
+    var dots = document.querySelectorAll('.mst-slide-dot');
+    var prevBtn = document.getElementById('slidePrev');
+    var nextBtn = document.getElementById('slideNext');
+    if (slides.length > 0) {
+        var currentSlide = 0;
+        var slideInterval;
+
+        function goToSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            currentSlide = (index + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        function startAutoplay() {
+            slideInterval = setInterval(function() {
+                goToSlide(currentSlide + 1);
+            }, 4000);
+        }
+
+        function resetAutoplay() {
+            clearInterval(slideInterval);
+            startAutoplay();
+        }
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', function() {
+                goToSlide(currentSlide - 1);
+                resetAutoplay();
+            });
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function() {
+                goToSlide(currentSlide + 1);
+                resetAutoplay();
+            });
+        }
+
+        dots.forEach(function(dot) {
+            dot.addEventListener('click', function() {
+                goToSlide(parseInt(this.getAttribute('data-index')));
+                resetAutoplay();
+            });
+        });
+
+        startAutoplay();
+    }
+
     // Sidebar submenu toggle (for internal app pages)
     var sidebarToggles = document.querySelectorAll('.mst-sidebar-link[data-toggle="submenu"]');
     sidebarToggles.forEach(function(toggle) {

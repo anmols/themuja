@@ -44,8 +44,8 @@
             <div class="mst-hero-shape mst-hero-shape-3"></div>
         </div>
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
+            <div class="mst-hero-row">
+                <div class="mst-hero-left">
                     <div class="mst-hero-content">
                         <span class="mst-hero-badge">Logistics & EXIM Software Solutions</span>
                         <h1 class="mst-hero-title">
@@ -77,36 +77,43 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="mst-hero-visual">
-                        <div class="mst-code-window">
-                            <div class="mst-code-header">
-                                <span class="mst-code-dot mst-code-dot-red"></span>
-                                <span class="mst-code-dot mst-code-dot-yellow"></span>
-                                <span class="mst-code-dot mst-code-dot-green"></span>
-                                <span class="mst-code-title">musasofttech.js</span>
+                <div class="mst-hero-right">
+                    <div class="mst-hero-slideshow" id="heroSlideshow">
+                        <div class="mst-slideshow-track">
+                            <div class="mst-slide active">
+                                <img src="images/project-1.svg" alt="Logistics Management Dashboard">
+                                <div class="mst-slide-caption">
+                                    <span class="mst-slide-tag">Logistics</span>
+                                    <span class="mst-slide-label">ICD & CFS Management Dashboard</span>
+                                </div>
                             </div>
-                            <div class="mst-code-body">
-                                <pre><code><span class="code-keyword">const</span> <span class="code-variable">musaSofttech</span> = {
-  <span class="code-property">logistics</span>: <span class="code-string">"ICD & CFS Management"</span>,
-  <span class="code-property">exim</span>: <span class="code-string">"Export-Import Mgmt"</span>,
-  <span class="code-property">finance</span>: <span class="code-string">"Revenue Accounting"</span>,
-  <span class="code-property">analytics</span>: <span class="code-string">"Decision Support"</span>
-};
-
-<span class="code-keyword">async function</span> <span class="code-function">streamline</span>() {
-  <span class="code-keyword">return await</span> MusaSoftTech
-    .<span class="code-function">optimize</span>(yourOperations);
-}</code></pre>
+                            <div class="mst-slide">
+                                <img src="images/project-2.svg" alt="Export-Import Management System">
+                                <div class="mst-slide-caption">
+                                    <span class="mst-slide-tag">EXIM</span>
+                                    <span class="mst-slide-label">Export-Import Document System</span>
+                                </div>
+                            </div>
+                            <div class="mst-slide">
+                                <img src="images/project-3.svg" alt="Revenue Accounting & Analytics">
+                                <div class="mst-slide-caption">
+                                    <span class="mst-slide-tag">Analytics</span>
+                                    <span class="mst-slide-label">Revenue Accounting & Audit</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="mst-floating-card mst-float-1">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                            <span>EXIM Ready</span>
-                        </div>
-                        <div class="mst-floating-card mst-float-2">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
-                            <span>Real-time Analytics</span>
+                        <div class="mst-slideshow-controls">
+                            <button class="mst-slide-btn mst-slide-prev" id="slidePrev" aria-label="Previous slide">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                            </button>
+                            <div class="mst-slide-dots" id="slideDots">
+                                <button class="mst-slide-dot active" data-index="0" aria-label="Slide 1"></button>
+                                <button class="mst-slide-dot" data-index="1" aria-label="Slide 2"></button>
+                                <button class="mst-slide-dot" data-index="2" aria-label="Slide 3"></button>
+                            </div>
+                            <button class="mst-slide-btn mst-slide-next" id="slideNext" aria-label="Next slide">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </button>
                         </div>
                     </div>
                 </div>
