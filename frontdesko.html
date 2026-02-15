@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frontdesko - Best Hotel Management Software & PMS | Free Hotel Software</title>
+    <meta name="description" content="Frontdesko is a modern hotel management software (PMS) built by hotel industry experts. Free for up to 5 rooms. Manage reservations, front desk operations, housekeeping, online bookings, and guest management from one powerful platform.">
+    <meta name="keywords" content="hotel management software, hotel PMS, property management system, hotel booking software, front desk software, hotel reservation system, free hotel software, hotel management system, hospitality software, hotel operations software, frontdesko">
+    <meta name="author" content="MusaSoftTech">
+
+    <!-- Open Graph / SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Frontdesko - Best Hotel Management Software & PMS">
+    <meta property="og:description" content="Modern hotel management software built by hotel experts. Free for small properties. Manage reservations, front desk, housekeeping, and guests from one platform.">
+    <meta property="og:url" content="https://frontdesko.app">
+    <meta property="og:site_name" content="Frontdesko">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Frontdesko - Best Hotel Management Software & PMS">
+    <meta name="twitter:description" content="Modern hotel management software built by hotel experts. Free for small properties. Manage reservations, front desk, housekeeping, and guests.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://frontdesko.app">
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Frontdesko",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "Modern hotel management software (PMS) built by hotel industry experts with 15+ years of experience. Manage reservations, front desk operations, housekeeping, and guest management.",
+        "url": "https://frontdesko.app",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Free for properties with up to 5 rooms"
+        },
+        "featureList": [
+            "Reservation Management",
+            "Front Desk Operations",
+            "Online Booking Engine",
+            "Housekeeping Module",
+            "Reports & Analytics",
+            "Mobile Access",
+            "Multi-currency Support",
+            "Multi-language Support",
+            "REST API Access",
+            "Channel Manager Integration"
+        ],
+        "creator": {
+            "@type": "Organization",
+            "name": "Frontdesko"
+        }
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Frontdesko Page Styles */
+        .fd-hero {
+            position: relative;
+            padding: 160px 0 100px;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            overflow: hidden;
+        }
+        .fd-hero-bg {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+        .fd-hero-shape {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.15;
+        }
+        .fd-hero-shape-1 {
+            width: 600px;
+            height: 600px;
+            background: #10b981;
+            top: -200px;
+            right: -100px;
+        }
+        .fd-hero-shape-2 {
+            width: 400px;
+            height: 400px;
+            background: #2563eb;
+            bottom: -150px;
+            left: -100px;
+        }
+        .fd-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+        }
+        .fd-hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 50px;
+            color: #34d399;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        .fd-hero-title {
+            font-size: 56px;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.1;
+            margin-bottom: 24px;
+        }
+        .fd-text-gradient {
+            background: linear-gradient(135deg, #10b981, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .fd-hero-subtitle {
+            font-size: 20px;
+            color: #94a3b8;
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+        .fd-hero-actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .fd-btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 32px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .fd-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+            color: #fff;
+            text-decoration: none;
+        }
+        .fd-btn-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 32px;
+            background: transparent;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 12px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .fd-btn-outline:hover {
+            border-color: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            text-decoration: none;
+        }
+        .fd-hero-visual {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .fd-hero-mockup {
+            background: linear-gradient(135deg, #1e293b, #334155);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+        }
+        .fd-mockup-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        .fd-mockup-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .fd-mockup-dot-red { background: #ef4444; }
+        .fd-mockup-dot-yellow { background: #f59e0b; }
+        .fd-mockup-dot-green { background: #10b981; }
+        .fd-mockup-row {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        .fd-mockup-card {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 16px;
+        }
+        .fd-mockup-label {
+            font-size: 11px;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .fd-mockup-value {
+            font-size: 22px;
+            font-weight: 700;
+            color: #fff;
+        }
+        .fd-mockup-value-green { color: #10b981; }
+        .fd-mockup-value-blue { color: #3b82f6; }
+        .fd-mockup-bar {
+            height: 6px;
+            border-radius: 3px;
+            background: rgba(255, 255, 255, 0.1);
+            margin-top: 8px;
+        }
+        .fd-mockup-bar-fill {
+            height: 100%;
+            border-radius: 3px;
+        }
+        .fd-mockup-bar-fill-green { background: #10b981; width: 78%; }
+        .fd-mockup-bar-fill-blue { background: #3b82f6; width: 62%; }
+        .fd-mockup-bar-fill-purple { background: #8b5cf6; width: 45%; }
+        .fd-mockup-list {
+            margin-top: 8px;
+        }
+        .fd-mockup-list-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: #94a3b8;
+            font-size: 13px;
+        }
+        .fd-mockup-list-item:last-child { border-bottom: none; }
+        .fd-mockup-status {
+            font-size: 11px;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        .fd-mockup-status-confirmed {
+            background: rgba(16, 185, 129, 0.15);
+            color: #34d399;
+        }
+        .fd-mockup-status-checkin {
+            background: rgba(59, 130, 246, 0.15);
+            color: #60a5fa;
+        }
+        .fd-mockup-status-pending {
+            background: rgba(245, 158, 11, 0.15);
+            color: #fbbf24;
+        }
+
+        /* Features Section */
+        .fd-features {
+            padding: 100px 0;
+            background: #fff;
+        }
+        .fd-section-tag {
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+        .fd-section-title {
+            font-size: 40px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 16px;
+        }
+        .fd-section-subtitle {
+            font-size: 18px;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto 60px;
+        }
+        .fd-feature-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 32px;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+        .fd-feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+        .fd-feature-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .fd-feature-icon-green { background: rgba(16, 185, 129, 0.12); color: #10b981; }
+        .fd-feature-icon-blue { background: rgba(59, 130, 246, 0.12); color: #3b82f6; }
+        .fd-feature-icon-purple { background: rgba(139, 92, 246, 0.12); color: #8b5cf6; }
+        .fd-feature-icon-orange { background: rgba(245, 158, 11, 0.12); color: #f59e0b; }
+        .fd-feature-icon-red { background: rgba(239, 68, 68, 0.12); color: #ef4444; }
+        .fd-feature-icon-teal { background: rgba(20, 184, 166, 0.12); color: #14b8a6; }
+        .fd-feature-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 10px;
+        }
+        .fd-feature-desc {
+            font-size: 15px;
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        /* Pricing Section */
+        .fd-pricing {
+            padding: 100px 0;
+            background: #f8fafc;
+        }
+        .fd-pricing-highlight {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            border-radius: 24px;
+            padding: 48px;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .fd-pricing-highlight::before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(16, 185, 129, 0.1);
+            border-radius: 50%;
+            top: -100px;
+            right: -100px;
+            filter: blur(60px);
+        }
+        .fd-pricing-free {
+            font-size: 64px;
+            font-weight: 800;
+            color: #10b981;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        .fd-pricing-desc {
+            font-size: 18px;
+            color: #94a3b8;
+            margin-bottom: 32px;
+        }
+        .fd-pricing-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 32px;
+        }
+        .fd-pricing-features li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 0;
+            color: #e2e8f0;
+            font-size: 16px;
+        }
+        .fd-pricing-features li svg {
+            flex-shrink: 0;
+            color: #10b981;
+        }
+        .fd-pricing-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .fd-pricing-tagline {
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+        .fd-pricing-note {
+            font-size: 15px;
+            color: #94a3b8;
+            margin-bottom: 24px;
+        }
+
+        /* CTA Section */
+        .fd-cta {
+            padding: 100px 0;
+            background: #fff;
+            text-align: center;
+        }
+        .fd-cta-card {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            border-radius: 24px;
+            padding: 64px 48px;
+            position: relative;
+            overflow: hidden;
+        }
+        .fd-cta-card::before {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            top: -200px;
+            right: -100px;
+            filter: blur(60px);
+        }
+        .fd-cta-title {
+            font-size: 36px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+        }
+        .fd-cta-subtitle {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 1;
+        }
+        .fd-cta-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+        .fd-btn-white {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 32px;
+            background: #fff;
+            color: #059669;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .fd-btn-white:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            color: #059669;
+            text-decoration: none;
+        }
+        .fd-btn-outline-white {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 32px;
+            background: transparent;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 12px;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .fd-btn-outline-white:hover {
+            border-color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Back link */
+        .fd-back-link {
+            position: fixed;
+            top: 24px;
+            left: 24px;
+            z-index: 1000;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(10px);
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .fd-back-link:hover {
+            background: rgba(15, 23, 42, 0.95);
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 991px) {
+            .fd-hero { padding: 140px 0 60px; }
+            .fd-hero-title { font-size: 40px; }
+            .fd-hero-visual { margin-top: 48px; }
+            .fd-pricing-highlight { padding: 32px; }
+            .fd-pricing-free { font-size: 48px; }
+            .fd-pricing-right { margin-top: 32px; }
+        }
+        @media (max-width: 767px) {
+            .fd-hero-title { font-size: 32px; }
+            .fd-hero-subtitle { font-size: 17px; }
+            .fd-section-title { font-size: 30px; }
+            .fd-cta-card { padding: 40px 24px; }
+            .fd-cta-title { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Back to Home -->
+    <a href="index.html" class="fd-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        MusaSoftTech
+    </a>
+
+    <!-- Hero Section -->
+    <section class="fd-hero">
+        <div class="fd-hero-bg">
+            <div class="fd-hero-shape fd-hero-shape-1"></div>
+            <div class="fd-hero-shape fd-hero-shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="fd-hero-content">
+                        <span class="fd-hero-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                            Hotel Management Software
+                        </span>
+                        <h1 class="fd-hero-title">
+                            Smart Hotel Management with <span class="fd-text-gradient">Frontdesko</span>
+                        </h1>
+                        <p class="fd-hero-subtitle">
+                            A modern, all-in-one property management system built by hotel industry experts. Manage reservations, front desk, housekeeping, and guests from one powerful platform.
+                        </p>
+                        <div class="fd-hero-actions">
+                            <a href="https://frontdesko.app" target="_blank" rel="noopener noreferrer" class="fd-btn-primary">
+                                Visit Frontdesko
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                            <a href="#features" class="fd-btn-outline">
+                                See Features
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="fd-hero-visual">
+                        <div class="fd-hero-mockup">
+                            <div class="fd-mockup-header">
+                                <span class="fd-mockup-dot fd-mockup-dot-red"></span>
+                                <span class="fd-mockup-dot fd-mockup-dot-yellow"></span>
+                                <span class="fd-mockup-dot fd-mockup-dot-green"></span>
+                            </div>
+                            <div class="fd-mockup-row">
+                                <div class="fd-mockup-card">
+                                    <div class="fd-mockup-label">Occupancy</div>
+                                    <div class="fd-mockup-value fd-mockup-value-green">78%</div>
+                                    <div class="fd-mockup-bar"><div class="fd-mockup-bar-fill fd-mockup-bar-fill-green"></div></div>
+                                </div>
+                                <div class="fd-mockup-card">
+                                    <div class="fd-mockup-label">Revenue</div>
+                                    <div class="fd-mockup-value fd-mockup-value-blue">$12.4K</div>
+                                    <div class="fd-mockup-bar"><div class="fd-mockup-bar-fill fd-mockup-bar-fill-blue"></div></div>
+                                </div>
+                            </div>
+                            <div class="fd-mockup-card">
+                                <div class="fd-mockup-label">Today's Reservations</div>
+                                <div class="fd-mockup-list">
+                                    <div class="fd-mockup-list-item">
+                                        <span>Room 201 - J. Smith</span>
+                                        <span class="fd-mockup-status fd-mockup-status-confirmed">Confirmed</span>
+                                    </div>
+                                    <div class="fd-mockup-list-item">
+                                        <span>Room 305 - A. Kumar</span>
+                                        <span class="fd-mockup-status fd-mockup-status-checkin">Check-in</span>
+                                    </div>
+                                    <div class="fd-mockup-list-item">
+                                        <span>Room 412 - M. Chen</span>
+                                        <span class="fd-mockup-status fd-mockup-status-pending">Pending</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="fd-features" id="features">
+        <div class="container">
+            <div class="text-center">
+                <span class="fd-section-tag">Features</span>
+                <h2 class="fd-section-title">Everything Your Hotel Needs</h2>
+                <p class="fd-section-subtitle">Frontdesko brings all your hotel operations into one intuitive platform</p>
+            </div>
+            <div class="row" style="row-gap: 24px;">
+                <div class="col-lg-4 col-md-6">
+                    <div class="fd-feature-card">
+                        <div class="fd-feature-icon fd-feature-icon-green">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                        </div>
+                        <h3 class="fd-feature-title">Reservation Management</h3>
+                        <p class="fd-feature-desc">Handle bookings, check-ins, and check-outs seamlessly. View availability in real-time and never overbook again.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="fd-feature-card">
+                        <div class="fd-feature-icon fd-feature-icon-blue">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        </div>
+                        <h3 class="fd-feature-title">Front Desk Operations</h3>
+                        <p class="fd-feature-desc">Streamline daily front desk tasks. Manage room assignments, guest requests, and staff coordination all in one place.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="fd-feature-card">
+                        <div class="fd-feature-icon fd-feature-icon-purple">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        </div>
+                        <h3 class="fd-feature-title">Online Booking Engine</h3>
+                        <p class="fd-feature-desc">Accept direct bookings 24/7 from your website. A professional booking widget that increases revenue and reduces OTA dependency.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="fd-feature-card">
+                        <div class="fd-feature-icon fd-feature-icon-orange">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                        </div>
+                        <h3 class="fd-feature-title">Reports & Analytics</h3>
+                        <p class="fd-feature-desc">Real-time reports on occupancy, revenue, guest preferences, and performance metrics to optimize your operations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="fd-feature-card">
+                        <div class="fd-feature-icon fd-feature-icon-red">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <h3 class="fd-feature-title">Housekeeping Module</h3>
+                        <p class="fd-feature-desc">Assign tasks, track room status, and coordinate with your housekeeping staff in real-time for faster turnovers.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="fd-feature-card">
+                        <div class="fd-feature-icon fd-feature-icon-teal">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                        </div>
+                        <h3 class="fd-feature-title">Mobile Access</h3>
+                        <p class="fd-feature-desc">Access your hotel data from anywhere, anytime. Mobile-optimized interface for on-the-go management and instant notifications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Highlight -->
+    <section class="fd-pricing">
+        <div class="container">
+            <div class="text-center">
+                <span class="fd-section-tag">Pricing</span>
+                <h2 class="fd-section-title">Start Free, Scale as You Grow</h2>
+                <p class="fd-section-subtitle">No hidden fees. Free setup and data migration included.</p>
+            </div>
+            <div class="fd-pricing-highlight">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="fd-pricing-free">FREE</div>
+                        <p class="fd-pricing-desc">Full access for properties with up to 5 rooms — forever.</p>
+                        <ul class="fd-pricing-features">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                All features included — no limitations
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Free setup and data migration
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Go live in 24 hours
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Multi-currency and multi-language support
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Affordable room-based plans as you grow
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="fd-pricing-right">
+                            <p class="fd-pricing-tagline">Built by hoteliers, for hoteliers</p>
+                            <p class="fd-pricing-note">15+ years of hotel industry experience baked into every feature. No technical expertise required.</p>
+                            <a href="https://frontdesko.app" target="_blank" rel="noopener noreferrer" class="fd-btn-primary" style="width: 100%; justify-content: center;">
+                                Get Started Free
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO Content Section -->
+    <section class="fd-features" id="about-frontdesko" style="background: #fff; padding-bottom: 60px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="fd-section-tag">About Frontdesko</span>
+                    <h2 class="fd-section-title" style="text-align: left;">Why Choose Frontdesko Hotel Management Software?</h2>
+                    <p style="font-size: 16px; color: #475569; line-height: 1.8; margin-bottom: 16px;">
+                        <a href="https://frontdesko.app" target="_blank" rel="noopener" style="color: #10b981; font-weight: 600;">Frontdesko</a> is a next-generation <strong>hotel management software</strong> and <strong>property management system (PMS)</strong> designed to simplify hotel operations. Built by hospitality industry veterans with over 15 years of experience, Frontdesko understands the real challenges hotels face every day.
+                    </p>
+                    <p style="font-size: 16px; color: #475569; line-height: 1.8; margin-bottom: 16px;">
+                        Whether you run a boutique hotel, a bed &amp; breakfast, a guest house, or a chain of properties, <a href="https://frontdesko.app" target="_blank" rel="noopener" style="color: #10b981; font-weight: 600;">Frontdesko hotel software</a> provides the tools you need to manage reservations, automate front desk workflows, coordinate housekeeping, and accept direct online bookings — all from a single, easy-to-use platform.
+                    </p>
+                    <p style="font-size: 16px; color: #475569; line-height: 1.8; margin-bottom: 24px;">
+                        With multi-currency and multi-language support, Frontdesko serves hotels worldwide. The <a href="https://frontdesko.app/pricing" target="_blank" rel="noopener" style="color: #10b981; font-weight: 600;">free tier for small properties</a> means you can get started with zero investment and scale as your business grows.
+                    </p>
+                    <a href="https://frontdesko.app" target="_blank" rel="noopener" class="fd-btn-primary">
+                        Try Frontdesko Free
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 20px; padding: 36px;">
+                        <h3 style="font-size: 22px; font-weight: 700; color: #0f172a; margin-bottom: 24px;">Frontdesko at a Glance</h3>
+                        <div style="display: flex; flex-direction: column; gap: 16px;">
+                            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <div><strong style="color: #0f172a;">All-in-One Hotel PMS</strong> — Reservations, front desk, housekeeping, billing, and guest management in one platform</div>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <div><strong style="color: #0f172a;">Free for Small Hotels</strong> — Full access for properties with up to 5 rooms, forever free</div>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <div><strong style="color: #0f172a;">Go Live in 24 Hours</strong> — Quick setup with free data migration, no technical skills needed</div>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <div><strong style="color: #0f172a;">Global Ready</strong> — Multi-currency, multi-language, works for hotels anywhere in the world</div>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 12px;">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <div><strong style="color: #0f172a;">API & Integrations</strong> — Connect with channel managers, payment gateways, and accounting software</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="fd-cta">
+        <div class="container">
+            <div class="fd-cta-card">
+                <h2 class="fd-cta-title">Ready to Modernize Your Hotel?</h2>
+                <p class="fd-cta-subtitle">Join hotels worldwide using Frontdesko to simplify operations and delight guests.</p>
+                <div class="fd-cta-actions">
+                    <a href="https://frontdesko.app" target="_blank" rel="noopener noreferrer" class="fd-btn-white">
+                        Visit frontdesko.app
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                    <a href="index.html" class="fd-btn-outline-white">
+                        Back to MusaSoftTech
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer class="mst-footer">
+        <div class="container">
+            <div class="mst-footer-bottom">
+                <p>&copy; 2026 MusaSoftTech. All rights reserved. | <a href="https://frontdesko.app" target="_blank" rel="noopener noreferrer" style="color: #10b981;">Frontdesko</a> is a product by Frontdesko.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
