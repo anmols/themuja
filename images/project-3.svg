@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c2d12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="12" fill="url(#bg3)"/>
+  <!-- Top bar -->
+  <rect x="0" y="0" width="800" height="48" rx="12" fill="rgba(0,0,0,0.2)"/>
+  <circle cx="24" cy="24" r="6" fill="#ff5f57"/>
+  <circle cx="44" cy="24" r="6" fill="#febc2e"/>
+  <circle cx="64" cy="24" r="6" fill="#28c840"/>
+  <text x="400" y="30" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600">Revenue Accounting &amp; Analytics</text>
+  <!-- Sidebar -->
+  <rect x="0" y="48" width="180" height="452" fill="rgba(0,0,0,0.15)"/>
+  <rect x="16" y="72" width="148" height="32" rx="6" fill="rgba(255,255,255,0.08)"/>
+  <text x="90" y="93" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="12">Dashboard</text>
+  <rect x="16" y="116" width="148" height="32" rx="6" fill="rgba(255,255,255,0.08)"/>
+  <text x="90" y="137" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="12">Revenue Accounting</text>
+  <rect x="16" y="160" width="148" height="32" rx="6" fill="rgba(255,255,255,0.15)"/>
+  <text x="90" y="181" text-anchor="middle" fill="white" font-family="Inter, Arial, sans-serif" font-size="12">Audit &amp; Recovery</text>
+  <rect x="16" y="204" width="148" height="32" rx="6" fill="rgba(255,255,255,0.08)"/>
+  <text x="90" y="225" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="12">Pre Deposit A/c</text>
+  <rect x="16" y="248" width="148" height="32" rx="6" fill="rgba(255,255,255,0.08)"/>
+  <text x="90" y="269" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="12">Payroll</text>
+  <!-- Top stats row -->
+  <rect x="200" y="68" width="185" height="90" rx="10" fill="rgba(255,255,255,0.12)"/>
+  <text x="220" y="92" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="11">Total Revenue</text>
+  <text x="220" y="126" fill="white" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">₹18.4 Cr</text>
+  <text x="220" y="146" fill="#86efac" font-family="Inter, Arial, sans-serif" font-size="11">▲ 12.3% vs last quarter</text>
+  <rect x="401" y="68" width="185" height="90" rx="10" fill="rgba(255,255,255,0.12)"/>
+  <text x="421" y="92" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="11">Audit Recovery</text>
+  <text x="421" y="126" fill="white" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">₹2.1 Cr</text>
+  <text x="421" y="146" fill="#86efac" font-family="Inter, Arial, sans-serif" font-size="11">▲ 8.7% recovery rate</text>
+  <rect x="602" y="68" width="178" height="90" rx="10" fill="rgba(255,255,255,0.12)"/>
+  <text x="622" y="92" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="11">Pre Deposit Balance</text>
+  <text x="622" y="126" fill="white" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">₹5.6 Cr</text>
+  <text x="622" y="146" fill="#fcd34d" font-family="Inter, Arial, sans-serif" font-size="11">● 34 active accounts</text>
+  <!-- Main chart -->
+  <rect x="200" y="178" width="386" height="220" rx="10" fill="rgba(255,255,255,0.08)"/>
+  <text x="220" y="206" fill="white" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">Revenue vs Recovery Trends</text>
+  <!-- Bar chart -->
+  <rect x="240" y="280" width="30" height="90" rx="3" fill="rgba(251,146,60,0.6)"/>
+  <rect x="240" y="320" width="30" height="50" rx="3" fill="rgba(52,211,153,0.6)"/>
+  <text x="255" y="386" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="Inter, Arial, sans-serif" font-size="9">Apr</text>
+  <rect x="290" y="260" width="30" height="110" rx="3" fill="rgba(251,146,60,0.6)"/>
+  <rect x="290" y="310" width="30" height="60" rx="3" fill="rgba(52,211,153,0.6)"/>
+  <text x="305" y="386" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="Inter, Arial, sans-serif" font-size="9">May</text>
+  <rect x="340" y="250" width="30" height="120" rx="3" fill="rgba(251,146,60,0.6)"/>
+  <rect x="340" y="300" width="30" height="70" rx="3" fill="rgba(52,211,153,0.6)"/>
+  <text x="355" y="386" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="Inter, Arial, sans-serif" font-size="9">Jun</text>
+  <rect x="390" y="240" width="30" height="130" rx="3" fill="rgba(251,146,60,0.6)"/>
+  <rect x="390" y="295" width="30" height="75" rx="3" fill="rgba(52,211,153,0.6)"/>
+  <text x="405" y="386" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="Inter, Arial, sans-serif" font-size="9">Jul</text>
+  <rect x="440" y="230" width="30" height="140" rx="3" fill="rgba(251,146,60,0.6)"/>
+  <rect x="440" y="285" width="30" height="85" rx="3" fill="rgba(52,211,153,0.6)"/>
+  <text x="455" y="386" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="Inter, Arial, sans-serif" font-size="9">Aug</text>
+  <rect x="490" y="220" width="30" height="150" rx="3" fill="rgba(251,146,60,0.8)"/>
+  <rect x="490" y="275" width="30" height="95" rx="3" fill="rgba(52,211,153,0.8)"/>
+  <text x="505" y="386" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="Inter, Arial, sans-serif" font-size="9">Sep</text>
+  <!-- Right side panel - Audit details -->
+  <rect x="602" y="178" width="178" height="220" rx="10" fill="rgba(255,255,255,0.08)"/>
+  <text x="622" y="206" fill="white" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">Audit Items</text>
+  <rect x="616" y="220" width="150" height="32" rx="6" fill="rgba(255,255,255,0.06)"/>
+  <text x="626" y="240" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="10">Revenue Mismatch</text>
+  <text x="756" y="240" text-anchor="end" fill="#fbbf24" font-family="Inter, Arial, sans-serif" font-size="10">12</text>
+  <rect x="616" y="260" width="150" height="32" rx="6" fill="rgba(255,255,255,0.06)"/>
+  <text x="626" y="280" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="10">Duty Shortfall</text>
+  <text x="756" y="280" text-anchor="end" fill="#fb923c" font-family="Inter, Arial, sans-serif" font-size="10">8</text>
+  <rect x="616" y="300" width="150" height="32" rx="6" fill="rgba(255,255,255,0.06)"/>
+  <text x="626" y="320" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="10">Billing Errors</text>
+  <text x="756" y="320" text-anchor="end" fill="#f87171" font-family="Inter, Arial, sans-serif" font-size="10">5</text>
+  <rect x="616" y="340" width="150" height="32" rx="6" fill="rgba(255,255,255,0.06)"/>
+  <text x="626" y="360" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="10">Resolved</text>
+  <text x="756" y="360" text-anchor="end" fill="#34d399" font-family="Inter, Arial, sans-serif" font-size="10">47</text>
+  <!-- Bottom section -->
+  <rect x="200" y="418" width="580" height="66" rx="10" fill="rgba(255,255,255,0.08)"/>
+  <text x="220" y="444" fill="white" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">Payroll Summary - Sept 2024</text>
+  <rect x="220" y="454" width="100" height="20" rx="3" fill="rgba(255,255,255,0.06)"/>
+  <text x="270" y="468" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Inter, Arial, sans-serif" font-size="9">Employees: 245</text>
+  <rect x="330" y="454" width="120" height="20" rx="3" fill="rgba(255,255,255,0.06)"/>
+  <text x="390" y="468" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Inter, Arial, sans-serif" font-size="9">Total Payroll: ₹48.2L</text>
+  <rect x="460" y="454" width="100" height="20" rx="3" fill="rgba(255,255,255,0.06)"/>
+  <text x="510" y="468" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Inter, Arial, sans-serif" font-size="9">Status: Processed</text>
+</svg>

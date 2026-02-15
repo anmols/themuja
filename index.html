@@ -1,61 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MusaSoftTech - Software Solutions & Technology Services</title>
+    <meta name="description" content="MusaSoftTech provides cutting-edge software solutions, custom development, and technology consulting services for businesses worldwide.">
+    <meta name="author" content="MusaSoftTech">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
 
-        <title></title>
-
-        <meta name="description" content="Source code generated using layoutit.com">
-        <meta name="author" content="LayoutIt!">
-
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-
-    </head>
-    <body>
-
-        <div class="container-fluid">
-            <div class="row">
-                <br><br><br>
-                
+    <!-- Navigation -->
+    <nav class="mst-navbar" id="mainNav">
+        <div class="container">
+            <a class="mst-navbar-brand" href="#">
+                <span class="brand-icon">M</span>
+                <span>Musa<strong>SoftTech</strong></span>
+            </a>
+            <button class="mst-nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="mst-nav-menu" id="navMenu">
+                <a href="#home" class="mst-nav-link active">Home</a>
+                <a href="#services" class="mst-nav-link">Services</a>
+                <a href="#about" class="mst-nav-link">About</a>
+                <a href="#features" class="mst-nav-link">Features</a>
+                <a href="#contact" class="mst-nav-link">Contact</a>
+                <a href="#contact" class="mst-btn mst-btn-nav">Find Out More</a>
             </div>
-            <div class="row">
-                
-                <div class="col-md-4">
-                   
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="mst-hero" id="home">
+        <div class="mst-hero-bg">
+            <div class="mst-hero-shape mst-hero-shape-1"></div>
+            <div class="mst-hero-shape mst-hero-shape-2"></div>
+            <div class="mst-hero-shape mst-hero-shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="mst-hero-row">
+                <div class="mst-hero-left">
+                    <div class="mst-hero-content">
+                        <span class="mst-hero-badge">Logistics & EXIM Software Solutions</span>
+                        <h1 class="mst-hero-title">
+                            Streamlining <span class="mst-text-gradient">Logistics & EXIM</span> Operations
+                        </h1>
+                        <p class="mst-hero-subtitle">
+                            Leading web application software solutions provider to the Logistics and Export-Import Industry. We help businesses in India and Overseas streamline their daily operational and financial processes.
+                        </p>
+                        <div class="mst-hero-actions">
+                            <a href="#services" class="mst-btn mst-btn-primary mst-btn-lg">
+                                Explore Services
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                            <a href="#contact" class="mst-btn mst-btn-outline mst-btn-lg">Get in Touch</a>
+                        </div>
+                        <div class="mst-hero-stats">
+                            <div class="mst-stat">
+                                <span class="mst-stat-number">150+</span>
+                                <span class="mst-stat-label">Projects Delivered</span>
+                            </div>
+                            <div class="mst-stat">
+                                <span class="mst-stat-number">50+</span>
+                                <span class="mst-stat-label">Happy Clients</span>
+                            </div>
+                            <div class="mst-stat">
+                                <span class="mst-stat-number">10+</span>
+                                <span class="mst-stat-label">Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-               
-                <div class="col-md-6">
-                    <h2>Login Panel</h2>
-                    <div class="form-group">
-                        <label for="usr">Account Id:</label>
-                        <input type="text" class="form-control" id="usr">
+                <div class="mst-hero-right">
+                    <div class="mst-hero-slideshow" id="heroSlideshow">
+                        <div class="mst-slideshow-track">
+                            <div class="mst-slide active">
+                                <img src="images/project-1.svg" alt="Logistics Management Dashboard">
+                                <div class="mst-slide-caption">
+                                    <span class="mst-slide-tag">Logistics</span>
+                                    <span class="mst-slide-label">ICD & CFS Management Dashboard</span>
+                                </div>
+                            </div>
+                            <div class="mst-slide">
+                                <img src="images/project-2.svg" alt="Export-Import Management System">
+                                <div class="mst-slide-caption">
+                                    <span class="mst-slide-tag">EXIM</span>
+                                    <span class="mst-slide-label">Export-Import Document System</span>
+                                </div>
+                            </div>
+                            <div class="mst-slide">
+                                <img src="images/project-3.svg" alt="Revenue Accounting & Analytics">
+                                <div class="mst-slide-caption">
+                                    <span class="mst-slide-tag">Analytics</span>
+                                    <span class="mst-slide-label">Revenue Accounting & Audit</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mst-slideshow-controls">
+                            <button class="mst-slide-btn mst-slide-prev" id="slidePrev" aria-label="Previous slide">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                            </button>
+                            <div class="mst-slide-dots" id="slideDots">
+                                <button class="mst-slide-dot active" data-index="0" aria-label="Slide 1"></button>
+                                <button class="mst-slide-dot" data-index="1" aria-label="Slide 2"></button>
+                                <button class="mst-slide-dot" data-index="2" aria-label="Slide 3"></button>
+                            </div>
+                            <button class="mst-slide-btn mst-slide-next" id="slideNext" aria-label="Next slide">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="usr">UserName:</label>
-                        <input type="text" class="form-control" id="usr">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd">
-                    </div>
-                    <div class="form-group">
-                        <a  class="form-control btn-info align-center btn" href="home.php">Submit</a>
-                    </div>
-                </div>
-                 <div class="col-md-2">
-                    
-
                 </div>
             </div>
         </div>
+    </section>
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+    <!-- Services Section -->
+    <section class="mst-section mst-section-services" id="services">
+        <div class="container">
+            <div class="mst-section-header">
+                <span class="mst-section-tag">What We Do</span>
+                <h2 class="mst-section-title">Our Services</h2>
+                <p class="mst-section-subtitle">Web application software solutions for the Logistics and Export-Import Industry</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="mst-service-card" data-animate="fade-up">
+                        <div class="mst-service-icon mst-service-icon-blue">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                        </div>
+                        <h3 class="mst-service-title">Logistics Management</h3>
+                        <p class="mst-service-desc">Comprehensive Logistics Channel management solutions for Inland Container Depots (ICD) and Container Freight Stations (CFS) to streamline operations.</p>
+                        <a href="#contact" class="mst-service-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="mst-service-card" data-animate="fade-up">
+                        <div class="mst-service-icon mst-service-icon-purple">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        </div>
+                        <h3 class="mst-service-title">Export-Import (EXIM) Management</h3>
+                        <p class="mst-service-desc">End-to-end Export-Import management systems helping businesses in India and overseas manage their EXIM operations efficiently.</p>
+                        <a href="#contact" class="mst-service-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="mst-service-card" data-animate="fade-up">
+                        <div class="mst-service-icon mst-service-icon-green">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        </div>
+                        <h3 class="mst-service-title">Revenue Accounting & Audit</h3>
+                        <p class="mst-service-desc">Revenue Accounting, Audit & Revenue Recovery, Pre Deposit Account Management and Miscellaneous Billing solutions.</p>
+                        <a href="#contact" class="mst-service-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="mst-service-card" data-animate="fade-up">
+                        <div class="mst-service-icon mst-service-icon-orange">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                        </div>
+                        <h3 class="mst-service-title">Decision Support & Analytics</h3>
+                        <p class="mst-service-desc">Business performance insights using decision support tools and data analytics to help you make informed operational decisions.</p>
+                        <a href="#contact" class="mst-service-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="mst-service-card" data-animate="fade-up">
+                        <div class="mst-service-icon mst-service-icon-red">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <h3 class="mst-service-title">Office Management & Payroll</h3>
+                        <p class="mst-service-desc">Comprehensive Office Management, Payroll and Finance & Accounting (F&A) process solutions for your organization.</p>
+                        <a href="#contact" class="mst-service-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="mst-service-card" data-animate="fade-up">
+                        <div class="mst-service-icon mst-service-icon-teal">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <h3 class="mst-service-title">Custom Web Applications</h3>
+                        <p class="mst-service-desc">User-friendly, cost effective web application systems built with deep domain expertise in logistics and export-import workflows.</p>
+                        <a href="#contact" class="mst-service-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="mst-section mst-section-about" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="mst-about-visual">
+                        <div class="mst-about-card mst-about-card-main">
+                            <div class="mst-about-icon-grid">
+                                <div class="mst-about-icon-item">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                    <span>Logistics</span>
+                                </div>
+                                <div class="mst-about-icon-item">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                    <span>EXIM</span>
+                                </div>
+                                <div class="mst-about-icon-item">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                                    <span>India & Global</span>
+                                </div>
+                                <div class="mst-about-icon-item">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    <span>Analytics</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mst-about-accent"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mst-about-content">
+                        <span class="mst-section-tag">About Us</span>
+                        <h2 class="mst-section-title text-left">Your Logistics & EXIM Technology Partner</h2>
+                        <p class="mst-about-text">
+                            MUSA Softtech Pvt. Ltd. is a leading web application software solutions provider to the Logistics and Export-Import Industry. We help customers in India and Overseas who are involved in Logistics Channel, Inland Container Depot and Container Freight Stations Management and Export-Import Management to streamline their daily operational and financial processes.
+                        </p>
+                        <p class="mst-about-text">
+                            We also help them gain insights on business performance using decision support tools and data analytics. Our expertise spans across Revenue Accounting, Audit & Revenue Recovery, Pre Deposit Account Management, Miscellaneous Billing, Office Management, Payroll, F&A Processes and Decision Support & Analytics.
+                        </p>
+                        <div class="mst-about-features">
+                            <div class="mst-about-feature">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <span>Revenue Accounting & Audit Recovery</span>
+                            </div>
+                            <div class="mst-about-feature">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <span>Decision Support & Data Analytics</span>
+                            </div>
+                            <div class="mst-about-feature">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <span>ICD & CFS Management Systems</span>
+                            </div>
+                            <div class="mst-about-feature">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <span>Payroll, F&A & Office Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="mst-section mst-section-features" id="features">
+        <div class="container">
+            <div class="mst-section-header">
+                <span class="mst-section-tag">Why Choose Us</span>
+                <h2 class="mst-section-title">Built Different, Built Better</h2>
+                <p class="mst-section-subtitle">What sets MusaSoftTech apart from the rest</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="mst-feature-card" data-animate="fade-up">
+                        <div class="mst-feature-number">01</div>
+                        <h4 class="mst-feature-title">Modern Tech Stack</h4>
+                        <p class="mst-feature-desc">We use the latest technologies and frameworks to build future-proof solutions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="mst-feature-card" data-animate="fade-up">
+                        <div class="mst-feature-number">02</div>
+                        <h4 class="mst-feature-title">Transparent Process</h4>
+                        <p class="mst-feature-desc">Clear communication and regular updates throughout the development lifecycle.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="mst-feature-card" data-animate="fade-up">
+                        <div class="mst-feature-number">03</div>
+                        <h4 class="mst-feature-title">Proven Results</h4>
+                        <p class="mst-feature-desc">Track record of delivering projects on time and exceeding client expectations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="mst-feature-card" data-animate="fade-up">
+                        <div class="mst-feature-number">04</div>
+                        <h4 class="mst-feature-title">Dedicated Support</h4>
+                        <p class="mst-feature-desc">Ongoing maintenance and support to keep your systems running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="mst-section mst-section-cta">
+        <div class="container">
+            <div class="mst-cta-card">
+                <div class="mst-cta-bg">
+                    <div class="mst-cta-shape mst-cta-shape-1"></div>
+                    <div class="mst-cta-shape mst-cta-shape-2"></div>
+                </div>
+                <div class="mst-cta-content">
+                    <h2 class="mst-cta-title">Ready to Transform Your Business?</h2>
+                    <p class="mst-cta-subtitle">Let's discuss how MUSA Softtech can streamline your logistics and EXIM operations.</p>
+                    <div class="mst-cta-actions">
+                        <a href="#contact" class="mst-btn mst-btn-white mst-btn-lg">Start a Project</a>
+                        <a href="#contact" class="mst-btn mst-btn-outline-white mst-btn-lg">Find Out More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="mst-section mst-section-contact" id="contact">
+        <div class="container">
+            <div class="mst-section-header">
+                <span class="mst-section-tag">Get In Touch</span>
+                <h2 class="mst-section-title">Contact Us</h2>
+                <p class="mst-section-subtitle">Have a project in mind? We'd love to hear from you.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mst-contact-info">
+                        <div class="mst-contact-item">
+                            <div class="mst-contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div>
+                                <h5>Our Office</h5>
+                                <p>Musa Softtech Private Limited<br>Mayur Vihar Phase 1,<br>New Delhi-110091, INDIA.</p>
+                            </div>
+                        </div>
+                        <div class="mst-contact-item">
+                            <div class="mst-contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div>
+                                <h5>Email Us</h5>
+                                <p>info@musasofttech.com</p>
+                            </div>
+                        </div>
+                        <div class="mst-contact-item">
+                            <div class="mst-contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div>
+                                <h5>Call Us</h5>
+                                <p>+91 9968040558</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <form class="mst-contact-form" id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mst-form-group">
+                                    <label for="contactName">Full Name</label>
+                                    <input type="text" class="mst-form-control" id="contactName" placeholder="John Doe" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mst-form-group">
+                                    <label for="contactEmail">Email Address</label>
+                                    <input type="email" class="mst-form-control" id="contactEmail" placeholder="john@company.com" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mst-form-group">
+                                    <label for="contactPhone">Phone Number</label>
+                                    <input type="tel" class="mst-form-control" id="contactPhone" placeholder="+91 9968040558">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mst-form-group">
+                                    <label for="contactSubject">Subject</label>
+                                    <select class="mst-form-control" id="contactSubject">
+                                        <option value="">Select a topic</option>
+                                        <option value="logistics">Logistics Management</option>
+                                        <option value="exim">Export-Import (EXIM)</option>
+                                        <option value="accounting">Revenue Accounting & Audit</option>
+                                        <option value="analytics">Decision Support & Analytics</option>
+                                        <option value="webapp">Custom Web Applications</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mst-form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea class="mst-form-control" id="contactMessage" rows="5" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="mst-btn mst-btn-primary mst-btn-lg mst-btn-full">
+                            Send Message
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mst-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mst-footer-brand">
+                        <a href="#" class="mst-navbar-brand">
+                            <span class="brand-icon">M</span>
+                            <span>Musa<strong>SoftTech</strong></span>
+                        </a>
+                        <p class="mst-footer-desc">Musa Softtech Private Limited - Leading web application software solutions provider to the Logistics and Export-Import Industry.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mst-footer-heading">Company</h5>
+                    <ul class="mst-footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mst-footer-heading">Services</h5>
+                    <ul class="mst-footer-links">
+                        <li><a href="#services">Logistics Management</a></li>
+                        <li><a href="#services">EXIM Management</a></li>
+                        <li><a href="#services">Revenue Accounting</a></li>
+                        <li><a href="#services">Analytics & Reporting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mst-footer-heading">Connect</h5>
+                    <ul class="mst-footer-links">
+                        <li><a href="mailto:info@musasofttech.com">info@musasofttech.com</a></li>
+                        <li><a href="tel:+919968040558">+91 9968040558</a></li>
+                        <li><a href="https://www.musasofttech.com">www.musasofttech.com</a></li>
+                        <li><a href="#">Mayur Vihar Phase 1, New Delhi, INDIA</a></li>
+                    </ul>
+                    <div class="mst-footer-social">
+                        <a href="#" class="mst-social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="#" class="mst-social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="#" class="mst-social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mst-footer-bottom">
+                <p>&copy; 2026 MusaSoftTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
 </html>

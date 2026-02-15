@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="12" fill="url(#bg2)"/>
+  <!-- Top bar -->
+  <rect x="0" y="0" width="800" height="48" rx="12" fill="rgba(0,0,0,0.2)"/>
+  <circle cx="24" cy="24" r="6" fill="#ff5f57"/>
+  <circle cx="44" cy="24" r="6" fill="#febc2e"/>
+  <circle cx="64" cy="24" r="6" fill="#28c840"/>
+  <text x="400" y="30" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600">Export-Import Management System</text>
+  <!-- Sidebar -->
+  <rect x="0" y="48" width="180" height="452" fill="rgba(0,0,0,0.15)"/>
+  <rect x="16" y="72" width="148" height="32" rx="6" fill="rgba(255,255,255,0.08)"/>
+  <text x="90" y="93" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="12">Overview</text>
+  <rect x="16" y="116" width="148" height="32" rx="6" fill="rgba(255,255,255,0.15)"/>
+  <text x="90" y="137" text-anchor="middle" fill="white" font-family="Inter, Arial, sans-serif" font-size="12">EXIM Documents</text>
+  <rect x="16" y="160" width="148" height="32" rx="6" fill="rgba(255,255,255,0.08)"/>
+  <text x="90" y="181" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="12">Bill of Entry</text>
+  <rect x="16" y="204" width="148" height="32" rx="6" fill="rgba(255,255,255,0.08)"/>
+  <text x="90" y="225" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="12">Shipping Bills</text>
+  <rect x="16" y="248" width="148" height="32" rx="6" fill="rgba(255,255,255,0.08)"/>
+  <text x="90" y="269" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="12">Customs Duty</text>
+  <!-- Main content - Document list -->
+  <rect x="200" y="68" width="580" height="40" rx="8" fill="rgba(255,255,255,0.12)"/>
+  <text x="220" y="93" fill="white" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">EXIM Document Management</text>
+  <rect x="624" y="76" width="70" height="24" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="659" y="93" text-anchor="middle" fill="white" font-family="Inter, Arial, sans-serif" font-size="10">+ New Doc</text>
+  <rect x="700" y="76" width="64" height="24" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="732" y="93" text-anchor="middle" fill="white" font-family="Inter, Arial, sans-serif" font-size="10">Export</text>
+  <!-- Table header -->
+  <rect x="200" y="124" width="580" height="36" rx="0" fill="rgba(255,255,255,0.08)"/>
+  <text x="220" y="147" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600">Doc No.</text>
+  <text x="320" y="147" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600">Type</text>
+  <text x="430" y="147" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600">Party</text>
+  <text x="570" y="147" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600">Status</text>
+  <text x="680" y="147" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600">Amount</text>
+  <!-- Table rows -->
+  <rect x="200" y="160" width="580" height="40" fill="rgba(255,255,255,0.04)"/>
+  <text x="220" y="185" fill="white" font-family="Inter, Arial, sans-serif" font-size="12">EXP-2024-0847</text>
+  <text x="320" y="185" fill="rgba(255,255,255,0.8)" font-family="Inter, Arial, sans-serif" font-size="12">Shipping Bill</text>
+  <text x="430" y="185" fill="rgba(255,255,255,0.8)" font-family="Inter, Arial, sans-serif" font-size="12">Global Trade Inc.</text>
+  <rect x="565" y="174" width="64" height="22" rx="11" fill="rgba(52,211,153,0.3)"/>
+  <text x="597" y="189" text-anchor="middle" fill="#6ee7b7" font-family="Inter, Arial, sans-serif" font-size="10">Cleared</text>
+  <text x="680" y="185" fill="white" font-family="Inter, Arial, sans-serif" font-size="12">₹12.4L</text>
+  <rect x="200" y="200" width="580" height="40" fill="rgba(255,255,255,0.02)"/>
+  <text x="220" y="225" fill="white" font-family="Inter, Arial, sans-serif" font-size="12">IMP-2024-1293</text>
+  <text x="320" y="225" fill="rgba(255,255,255,0.8)" font-family="Inter, Arial, sans-serif" font-size="12">Bill of Entry</text>
+  <text x="430" y="225" fill="rgba(255,255,255,0.8)" font-family="Inter, Arial, sans-serif" font-size="12">Oceanic Logistics</text>
+  <rect x="565" y="214" width="64" height="22" rx="11" fill="rgba(251,191,36,0.3)"/>
+  <text x="597" y="229" text-anchor="middle" fill="#fcd34d" font-family="Inter, Arial, sans-serif" font-size="10">Pending</text>
+  <text x="680" y="225" fill="white" font-family="Inter, Arial, sans-serif" font-size="12">₹8.7L</text>
+  <rect x="200" y="240" width="580" height="40" fill="rgba(255,255,255,0.04)"/>
+  <text x="220" y="265" fill="white" font-family="Inter, Arial, sans-serif" font-size="12">EXP-2024-0846</text>
+  <text x="320" y="265" fill="rgba(255,255,255,0.8)" font-family="Inter, Arial, sans-serif" font-size="12">Shipping Bill</text>
+  <text x="430" y="265" fill="rgba(255,255,255,0.8)" font-family="Inter, Arial, sans-serif" font-size="12">Apex Exporters</text>
+  <rect x="565" y="254" width="64" height="22" rx="11" fill="rgba(52,211,153,0.3)"/>
+  <text x="597" y="269" text-anchor="middle" fill="#6ee7b7" font-family="Inter, Arial, sans-serif" font-size="10">Cleared</text>
+  <text x="680" y="265" fill="white" font-family="Inter, Arial, sans-serif" font-size="12">₹23.1L</text>
+  <rect x="200" y="280" width="580" height="40" fill="rgba(255,255,255,0.02)"/>
+  <text x="220" y="305" fill="white" font-family="Inter, Arial, sans-serif" font-size="12">IMP-2024-1292</text>
+  <text x="320" y="305" fill="rgba(255,255,255,0.8)" font-family="Inter, Arial, sans-serif" font-size="12">Bill of Entry</text>
+  <text x="430" y="305" fill="rgba(255,255,255,0.8)" font-family="Inter, Arial, sans-serif" font-size="12">Star Imports Pvt</text>
+  <rect x="565" y="294" width="64" height="22" rx="11" fill="rgba(96,165,250,0.3)"/>
+  <text x="597" y="309" text-anchor="middle" fill="#93c5fd" font-family="Inter, Arial, sans-serif" font-size="10">Review</text>
+  <text x="680" y="305" fill="white" font-family="Inter, Arial, sans-serif" font-size="12">₹15.6L</text>
+  <rect x="200" y="320" width="580" height="40" fill="rgba(255,255,255,0.04)"/>
+  <text x="220" y="345" fill="white" font-family="Inter, Arial, sans-serif" font-size="12">EXP-2024-0845</text>
+  <text x="320" y="345" fill="rgba(255,255,255,0.8)" font-family="Inter, Arial, sans-serif" font-size="12">Customs Duty</text>
+  <text x="430" y="345" fill="rgba(255,255,255,0.8)" font-family="Inter, Arial, sans-serif" font-size="12">IndoTrade Corp.</text>
+  <rect x="565" y="334" width="64" height="22" rx="11" fill="rgba(52,211,153,0.3)"/>
+  <text x="597" y="349" text-anchor="middle" fill="#6ee7b7" font-family="Inter, Arial, sans-serif" font-size="10">Cleared</text>
+  <text x="680" y="345" fill="white" font-family="Inter, Arial, sans-serif" font-size="12">₹5.2L</text>
+  <!-- Summary bar -->
+  <rect x="200" y="380" width="580" height="104" rx="10" fill="rgba(255,255,255,0.08)"/>
+  <text x="220" y="408" fill="white" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">EXIM Summary - Q4 2024</text>
+  <rect x="220" y="424" width="120" height="44" rx="6" fill="rgba(255,255,255,0.08)"/>
+  <text x="280" y="443" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Inter, Arial, sans-serif" font-size="10">Total Exports</text>
+  <text x="280" y="462" text-anchor="middle" fill="white" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">₹4.2 Cr</text>
+  <rect x="356" y="424" width="120" height="44" rx="6" fill="rgba(255,255,255,0.08)"/>
+  <text x="416" y="443" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Inter, Arial, sans-serif" font-size="10">Total Imports</text>
+  <text x="416" y="462" text-anchor="middle" fill="white" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">₹3.8 Cr</text>
+  <rect x="492" y="424" width="120" height="44" rx="6" fill="rgba(255,255,255,0.08)"/>
+  <text x="552" y="443" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Inter, Arial, sans-serif" font-size="10">Duty Collected</text>
+  <text x="552" y="462" text-anchor="middle" fill="white" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">₹1.1 Cr</text>
+  <rect x="628" y="424" width="120" height="44" rx="6" fill="rgba(255,255,255,0.08)"/>
+  <text x="688" y="443" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Inter, Arial, sans-serif" font-size="10">Documents</text>
+  <text x="688" y="462" text-anchor="middle" fill="white" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">847</text>
+</svg>

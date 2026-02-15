@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="12" fill="url(#bg1)"/>
+  <!-- Top bar -->
+  <rect x="0" y="0" width="800" height="48" rx="12" fill="rgba(0,0,0,0.2)"/>
+  <circle cx="24" cy="24" r="6" fill="#ff5f57"/>
+  <circle cx="44" cy="24" r="6" fill="#febc2e"/>
+  <circle cx="64" cy="24" r="6" fill="#28c840"/>
+  <text x="400" y="30" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600">Logistics Management Dashboard</text>
+  <!-- Sidebar -->
+  <rect x="0" y="48" width="180" height="452" fill="rgba(0,0,0,0.15)"/>
+  <rect x="16" y="72" width="148" height="32" rx="6" fill="rgba(255,255,255,0.15)"/>
+  <text x="90" y="93" text-anchor="middle" fill="white" font-family="Inter, Arial, sans-serif" font-size="12">Dashboard</text>
+  <rect x="16" y="116" width="148" height="32" rx="6" fill="rgba(255,255,255,0.08)"/>
+  <text x="90" y="137" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="12">Container Tracking</text>
+  <rect x="16" y="160" width="148" height="32" rx="6" fill="rgba(255,255,255,0.08)"/>
+  <text x="90" y="181" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="12">ICD Management</text>
+  <rect x="16" y="204" width="148" height="32" rx="6" fill="rgba(255,255,255,0.08)"/>
+  <text x="90" y="225" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="12">CFS Operations</text>
+  <!-- Stats cards -->
+  <rect x="200" y="68" width="140" height="80" rx="10" fill="rgba(255,255,255,0.12)"/>
+  <text x="270" y="96" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="11">Active Containers</text>
+  <text x="270" y="130" text-anchor="middle" fill="white" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">1,247</text>
+  <rect x="356" y="68" width="140" height="80" rx="10" fill="rgba(255,255,255,0.12)"/>
+  <text x="426" y="96" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="11">Shipments Today</text>
+  <text x="426" y="130" text-anchor="middle" fill="white" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">384</text>
+  <rect x="512" y="68" width="140" height="80" rx="10" fill="rgba(255,255,255,0.12)"/>
+  <text x="582" y="96" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="11">Revenue (Cr)</text>
+  <text x="582" y="130" text-anchor="middle" fill="white" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">42.8</text>
+  <rect x="668" y="68" width="112" height="80" rx="10" fill="rgba(255,255,255,0.12)"/>
+  <text x="724" y="96" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Inter, Arial, sans-serif" font-size="11">Pending</text>
+  <text x="724" y="130" text-anchor="middle" fill="white" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">56</text>
+  <!-- Chart area -->
+  <rect x="200" y="168" width="380" height="200" rx="10" fill="rgba(255,255,255,0.08)"/>
+  <text x="220" y="196" fill="white" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">Monthly Shipment Trends</text>
+  <polyline points="220,340 270,310 320,320 370,280 420,290 470,250 520,260 560,230" fill="none" stroke="#60a5fa" stroke-width="2.5"/>
+  <polyline points="220,350 270,330 320,340 370,310 420,320 470,290 520,300 560,270" fill="none" stroke="#34d399" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <!-- Table area -->
+  <rect x="596" y="168" width="184" height="200" rx="10" fill="rgba(255,255,255,0.08)"/>
+  <text x="616" y="196" fill="white" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">Recent Activity</text>
+  <rect x="610" y="210" width="156" height="28" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="610" y="246" width="156" height="28" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="610" y="282" width="156" height="28" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="610" y="318" width="156" height="28" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <!-- Bottom table -->
+  <rect x="200" y="388" width="580" height="96" rx="10" fill="rgba(255,255,255,0.08)"/>
+  <text x="220" y="416" fill="white" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">Container Inventory</text>
+  <rect x="216" y="430" width="548" height="20" rx="3" fill="rgba(255,255,255,0.06)"/>
+  <rect x="216" y="456" width="548" height="20" rx="3" fill="rgba(255,255,255,0.04)"/>
+</svg>
