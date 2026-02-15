@@ -1,0 +1,22 @@
+# PHP backend files (not supported on Vercel)
+admine/
+customer/
+sidebar/
+chart/
+nbproject/
+
+# PHP files
+*.php
+config.php
+home.php
+header.php
+register.php
+register-comm.php
+search.php
+a.php
+
+# Database
+*.sql
+
+# IDE files
+nbproject/
